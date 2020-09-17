@@ -1,0 +1,10 @@
+{
+  "prefix": "h!",
+  "botName": "Bot",
+  "botID": "123123123",
+  "botDescription": "Descrição do Bot.",
+  "botColor": "#fff",
+  "welcomeChannelID": "123123123123",
+  "welcomeMessage": "Olá {member}! Seja bem-vind@ ao {guildName}!",
+  "leaveMessage": "{member} saiu do servidor..."
+}
