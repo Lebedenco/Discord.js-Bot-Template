@@ -46,7 +46,7 @@ exports.run = (client, msg, args) => {
         .setDescription(command.help.description)
         .addField('**Aliases: **', command.help.aliases.length > 0 ? command.help.aliases.map(alias => `\`\`${ alias }\`\``) : 'Não possui aliases.', true)
         .addField('**Argumentos: **', command.help.args.length > 0 ? command.help.args.map(a => (a.alias ? `\`\`${ a.name }` + ' | ' + a.alias : `\`\`${ a.name }`) + (a.expects ? ' (' + a.expects + ')``' : '``')) : '``Não possui argumentos.``', true)
-        .addField('**Como usar**', `\`\`${ command.help.usage }\`\``)
+        .addField('**Como usar**', `\`\`${ config.prefix }${ command.help.usage }\`\``)
         .addField('**Permissão**', `\`\`${ command.help.permission }\`\``, true)
         .setColor(config.botColor)
         .setFooter(`${ config.prefix }ajuda`)
